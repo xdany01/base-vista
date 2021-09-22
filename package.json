@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "start": "gulp copy-html copy-favicon sass babel copy-jsb5 copy-mapb5"
+    "start": "gulp copy-html copy-favicon sass babel copy-jq copy-mapjq copy-jsb copy-mapb"
   },
   "author": "",
   "license": "MIT",
@@ -24,7 +24,8 @@
     "node-sass": "^6.0.0"
   },
   "dependencies": {
-    "bootstrap": "^5.0.1"
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0"
   },
   "repository": {
     "type": "git",

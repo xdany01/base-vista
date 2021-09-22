@@ -66,13 +66,23 @@ gulp.task('copy-html', () => {
         .pipe(gulp.dest(path.html.dest))
 })
 
-gulp.task('copy-jsb5', () => {
+gulp.task('copy-jsb', () => {
     return gulp.src('node_modules/bootstrap/dist/js/bootstrap.bundle.js')
         .pipe(gulp.dest(path.js.dest))
 })
 
-gulp.task('copy-mapb5', () => {
+gulp.task('copy-mapb', () => {
     return gulp.src('node_modules/bootstrap/dist/js/bootstrap.bundle.js.map')
+        .pipe(gulp.dest(path.js.dest))
+})
+
+gulp.task('copy-jq', () => {
+    return gulp.src('node_modules/jquery/dist/jquery.min.js')
+        .pipe(gulp.dest(path.js.dest))
+})
+
+gulp.task('copy-mapjq', () => {
+    return gulp.src('node_modules/jquery/dist/jquery.min.map')
         .pipe(gulp.dest(path.js.dest))
 })
 
