@@ -7,6 +7,6 @@
 
 `npm run start` : Ejecuta una serie de eventos configurados con gulp en el package.json.
 
-`gulp imge` : Copia y optimiza las imagenes al directorio de distribución.
+`gulp image` : Copia y optimiza las imagenes al directorio de distribución.
 
 `gulp` : Ejecuta livereload y el modo watch. Para detenerlo se debe presionar `CTRL+C`.
