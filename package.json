@@ -1,0 +1,38 @@
+{
+  "name": "base-vista",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp copy-html copy-favicon sass babel copy-jsb5 copy-mapb5"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/register": "^7.13.16",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^6.2.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.0.1",
+    "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdany01/base-vista.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xdany01/base-vista/issues"
+  },
+  "homepage": "https://github.com/xdany01/base-vista#readme",
+  "description": ""
+}
