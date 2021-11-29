@@ -1,5 +1,5 @@
 const gulp = require("gulp")
-const sass = require("gulp-sass")
+const sass = require("gulp-sass")(require('sass'))
 const autoprefixer = require("gulp-autoprefixer")
 const image = require('gulp-image')
 const babel = require('gulp-babel')
@@ -14,7 +14,7 @@ const path = {
         dest: 'dist/js/'
     },
     css: {
-        sour: 'src/scss/main.scss',
+        sour: 'src/scss/*.scss',
         dest: 'dist/css/'
     },
     html: {
@@ -35,10 +35,11 @@ gulp.task('babel', () => {
     return gulp.src(path.js.sour)
         .pipe(sourcemaps.init())
         .pipe(babel({
-            presets: ['@babel/env']
+            presets: ['@babel/preset-modules'],
+            plugins: ['@babel/transform-runtime'],
         }))
         .pipe(terser())
-        .pipe(concat('all.js'))
+        // .pipe(concat('all.js'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.js.dest))
         .pipe(browserSync.stream({match: path.js.dest}))
