@@ -16,15 +16,15 @@
     "@babel/runtime": "^7.16.3",
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-image": "^6.2.1",
+    "gulp-image": "^6.3.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.1.0",
-    "sass": "1.43.5"
+    "sass": "1.44.0"
   },
   "dependencies": {
     "bootstrap": "^5.1.3"
