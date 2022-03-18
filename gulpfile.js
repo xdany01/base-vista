@@ -77,6 +77,11 @@ gulp.task('copy-mapb', () => {
         .pipe(gulp.dest(path.js.dest))
 })
 
+gulp.task('copy-jsm', () => {
+    return gulp.src('node_modules/materialize-css/dist/js/materialize.min.js')
+        .pipe(gulp.dest(path.js.dest))
+})
+
 gulp.task('copy-jq', () => {
     return gulp.src('node_modules/jquery/dist/jquery.min.js')
         .pipe(gulp.dest(path.js.dest))

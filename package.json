@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "start": "gulp copy-html copy-json sass babel copy-jsb copy-mapb"
+    "start": "gulp copy-html copy-json copy-jsm sass babel"
   },
   "author": "",
   "license": "MIT",
@@ -26,9 +26,6 @@
     "gulp-terser": "^2.1.0",
     "sass": "1.44.0"
   },
-  "dependencies": {
-    "bootstrap": "^5.1.3"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xdany01/base-vista.git"
@@ -37,5 +34,8 @@
     "url": "https://github.com/xdany01/base-vista/issues"
   },
   "homepage": "https://github.com/xdany01/base-vista#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
 }
